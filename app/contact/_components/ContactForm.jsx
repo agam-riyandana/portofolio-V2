@@ -56,7 +56,7 @@ export default function ContactForm() {
                 <Textarea onChange={(e) => setMessage(e.target.value)} value={message} autoComplete="off" id="message" placeholder="What's on your mind?" className="w-full min-h-[120px]"></Textarea>
             </div>
             <div className="w-full max-w-md mx-auto mt-2 flex flex-col gap-2">
-                {/* <Button asChild variant="secondary" size="sm" className="text-xs w-fit"><a href="mailto:hi@rahul.eu.org">hi@rahul.eu.org</a></Button> */}
+                {/* <Button asChild variant="secondary" size="sm" className="text-xs w-fit"><a href="mailto:agamriyandana7@gmail.com">agamriyandana7@gmail.com</a></Button> */}
                 <Button className="w-full" type="submit">{
                     loading ? (<Loader2 className="w-4 h-4 animate-spin" />) : "Send"
                 }</Button>
