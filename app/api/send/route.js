@@ -3,7 +3,6 @@ import { cookies } from 'next/headers';
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-const resend = new Resend('re_H9mdAtKP_FJNE2ZczzeZ2zgTMBNyaZDap');
 const resend = new Resend(process.env.RESEND_API_KEY);
 export async function POST(request) {
     if (!resend) return NextResponse.json({ error: "Resend API Key Not Found" });
